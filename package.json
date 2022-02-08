@@ -1,10 +1,12 @@
 {
-  "name": "express",
+  "name": "express-experiment",
   "version": "0.0.1",
   "description": "experiment to learn more about express.js",
   "main": "/out/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "tsc",
+    "start": "node ./out/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,7 @@
   "keywords": [
     "typescript",
     "node.js",
-    "express",
+    "expressjs",
     "experiment"
   ],
   "author": "NuclearRedeye",
@@ -21,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/nuclearredeye/express.js/issues"
   },
-  "homepage": "https://github.com/nuclearredeye/express.js#readme"
+  "homepage": "https://github.com/nuclearredeye/express.js#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
