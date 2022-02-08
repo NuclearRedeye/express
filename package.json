@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "prestart": "tsc",
-    "start": "node ./out/index.js"
+    "predebug": "tsc",
+    "debug": "node ./out/debug/index.js"
   },
   "repository": {
     "type": "git",

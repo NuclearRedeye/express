@@ -4,7 +4,7 @@
     "module": "ESNext",
     "rootDir": "./src",
     "sourceMap": true,
-    "outDir": "./out",
+    "outDir": "./out/debug",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
