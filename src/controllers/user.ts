@@ -17,15 +17,15 @@ userController.post('/', (request, response) => {
   response.sendStatus(501);
 });
 
-userController.get('/:uuid', (request, response) => {
+userController.get('/:userid', (request, response) => {
   response.sendStatus(501);
 });
 
-userController.put('/:uuid', (request, response) => {
+userController.put('/:userid', (request, response) => {
   response.sendStatus(501);
 });
 
-userController.delete('/:uuid', (request, response) => {
+userController.delete('/:userid', (request, response) => {
   response.sendStatus(501);
 });
 
