@@ -1,7 +1,13 @@
 import { app } from './app.js';
 
-export const port = process.env['PORT'] || 3000;
+export const port = process.env['PORT'] || 80;
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`${process.argv0} listening on port ${port}`);
+
+  process.on('SIGINT', function () {
+    server.close(function () {
+      process.exit(0);
+    });
+  });
 })
