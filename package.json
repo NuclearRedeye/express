@@ -39,10 +39,8 @@
     "express": "^4.17.1"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
+    "testRegex": [
+      "\\.?\/?(src|tests?)\/.*\\.(test|spec)\\.[jt]sx?"
     ],
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "ts-jest"
@@ -52,9 +50,6 @@
       "ts-jest": {
         "tsconfig": "tsconfig.json"
       }
-    },
-    "testMatch": [
-      "**/?(*.)+(spec|test).[jt]s?(x)"
-    ]
+    }
   }
 }
